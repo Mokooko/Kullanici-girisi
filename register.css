@@ -1,0 +1,126 @@
+:root{
+    --color-primary: rgba(32, 136, 58, 0.7);
+    --color-primary-dark: rgb(18, 83, 26);
+    --color-secondary: rgb(26, 9, 176);
+    --color-error: rgb(219, 54, 12);
+    --color-success: rgb(165, 204, 23);
+
+    --bg-color-primary: rgba(20, 206, 17, 0.3);
+    --bg-color-primary-dark:rgba(1, 86, 1, 0.86);
+
+    --border-radius: 5px;
+
+    --regular-font-size: 15px;
+    --mobile-font-size: 15px;
+
+    --box-shadow: 0 0 40px rgb(42, 10, 250);
+
+    --input-padding: 0.7rem;
+    --input-regular-border: 1px solid #130707;
+}
+
+body{
+    background: linear-gradient( to right, var(--bg-color-primary),var(--bg-color-primary-dark)), url(welcome-905562_960_720.png);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+
+
+    font-size: var(--regular-font-size);
+    position: relative;
+}
+.container {
+    background-color:white;
+    width: 400px;
+    height: 400px;
+    max-width: 600px;
+    max-height: 600px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: var(--box-shadow);
+
+}
+.form_tittle {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.form__message{
+    text-align: center;
+    margin-bottom: 1rem;
+    
+}
+.form_message-error{
+    color: var(--color-error);
+}
+.form_input--group{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+.form__input{
+    color: rgb(10, 8, 8);
+    width: 100%;
+    padding: var(--input-padding);
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    outline: none;
+    border: var(--input-regular-border);
+    background-color: #ffffff;
+    transition: background .3s, border-color .3s;
+}
+.form__input:focus{
+    border-color: var(--color-primary);
+    background-color: rgba(213, 213, 227, 0.466);   
+}
+.form__input-error-message{
+    margin-top: 0.5rem;
+    font: .85rem;
+    color: var(--color-error);
+}
+.form__button{
+    
+    width: 92%;
+    border-radius: var(--border-radius);
+    padding: 1rem 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: var(--color-primary);
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.form__button:hover{
+    background-color: var(--color-primary-dark);
+}
+.form__button:active{
+    transform: scale(0.95);
+}
+.form__text{
+    text-align: center;
+    font-size: var(--regular-font-size);
+}
+.form__link{
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.form__link:hover{
+    text-decoration: underline;
+}
+.form > *:first-child {
+    margin-top: 0;
+
+}
+.form > *:last-child{
+    margin-bottom: 0;
+}
