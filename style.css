@@ -20,12 +20,11 @@
 }
 
 body{
-    background: linear-gradient( to right, var(--bg-color-primary),var(--bg-color-primary-dark)), url(welcome-905562_960_720.png);
+    background: linear-gradient( to right, var(--bg-color-primary),var(--bg-color-primary-dark)), url(the-caucasus-5299607_1280.png);
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
     margin: 0;
-
 
     font-size: var(--regular-font-size);
     position: relative;
